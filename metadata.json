@@ -1,0 +1,7 @@
+{
+  "name": "Flash Flood Detective",
+  "description": "High-tech detective dashboard investigating municipal flash flood risks, hydro-sensors, real-time precipitation telemetry, citizen water logging reports, and emergency SOS dispatch.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

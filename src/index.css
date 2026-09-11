@@ -1,0 +1,135 @@
+@import "tailwindcss";
+@import "leaflet/dist/leaflet.css";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  }
+  
+  .font-mono-hud {
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  .font-display {
+    font-family: 'Chakra Petch', sans-serif;
+  }
+}
+
+/* Tactical Leaflet Map Overrides */
+.leaflet-container {
+  background-color: #0b0f17 !important;
+  font-family: 'JetBrains Mono', monospace !important;
+}
+
+.leaflet-popup-content-wrapper {
+  background: #0f1624 !important;
+  color: #e2e8f0 !important;
+  border: 1px solid rgba(6, 182, 212, 0.5) !important;
+  border-radius: 10px !important;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.8), 0 0 15px rgba(6, 182, 212, 0.2) !important;
+  padding: 0 !important;
+}
+
+.leaflet-popup-content {
+  margin: 10px 14px !important;
+  line-height: 1.4 !important;
+}
+
+.leaflet-popup-tip {
+  background: #0f1624 !important;
+  border: 1px solid rgba(6, 182, 212, 0.5) !important;
+}
+
+.leaflet-popup-close-button {
+  color: #94a3b8 !important;
+  padding: 6px 8px !important;
+}
+
+.leaflet-popup-close-button:hover {
+  color: #00e5ff !important;
+}
+
+.leaflet-bar {
+  border: 1px solid rgba(6, 182, 212, 0.3) !important;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.6) !important;
+  border-radius: 8px !important;
+  overflow: hidden !important;
+}
+
+.leaflet-bar a {
+  background-color: #111726 !important;
+  color: #00e5ff !important;
+  border-bottom: 1px solid rgba(6, 182, 212, 0.2) !important;
+}
+
+.leaflet-bar a:hover {
+  background-color: #1a233a !important;
+  color: #38bdf8 !important;
+}
+
+.leaflet-control-attribution {
+  background: rgba(11, 15, 23, 0.8) !important;
+  color: #64748b !important;
+  font-size: 9px !important;
+}
+
+.leaflet-control-attribution a {
+  color: #00e5ff !important;
+}
+
+/* High-tech detective tactical radar & grid background */
+.bg-radar-grid {
+  background-size: 32px 32px;
+  background-image: 
+    linear-gradient(to right, rgba(0, 229, 255, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 229, 255, 0.04) 1px, transparent 1px);
+}
+
+.bg-detective-corkboard {
+  background-color: #0f131a;
+  background-image: 
+    radial-gradient(rgba(245, 158, 11, 0.05) 1px, transparent 0),
+    radial-gradient(rgba(0, 229, 255, 0.05) 1px, transparent 0);
+  background-position: 0 0, 16px 16px;
+  background-size: 32px 32px;
+}
+
+/* Tactical scanlines subtle effect */
+.scanline-overlay {
+  background: linear-gradient(
+    rgba(18, 24, 38, 0) 50%, 
+    rgba(0, 0, 0, 0.25) 50%
+  );
+  background-size: 100% 4px;
+  pointer-events: none;
+}
+
+/* Neon glow utility accents */
+.glow-cyan-sm {
+  box-shadow: 0 0 12px -2px rgba(6, 182, 212, 0.35);
+}
+
+.glow-amber-sm {
+  box-shadow: 0 0 12px -2px rgba(245, 158, 11, 0.35);
+}
+
+.glow-cyan-border {
+  border-color: rgba(6, 182, 212, 0.6);
+  box-shadow: 0 0 15px -3px rgba(6, 182, 212, 0.25);
+}
+
+/* Custom Tactical Scrollbars */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0d1117;
+}
+::-webkit-scrollbar-thumb {
+  background: #242c3d;
+  border-radius: 3px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #00e5ff88;
+}
